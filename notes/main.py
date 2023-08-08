@@ -1,4 +1,5 @@
-import view.menu as v
+# import View.menu
+from View import menu
 
-v.menu()
+menu.menu()
 

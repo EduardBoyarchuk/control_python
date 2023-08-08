@@ -1,5 +1,5 @@
 
-import view.view_add_notes as v
+import View.view_add_notes as v
 
 def menu():
     with True:

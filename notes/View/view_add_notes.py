@@ -1,4 +1,4 @@
-import presenter.add_notes as p_add
+import Presenter.add_notes as p_add
 
 
 def view_add_notes():
