@@ -1,8 +1,11 @@
-from notes.View.view_add_notes import view_add_notes
+import View.work_with_the_user as View
+from notes.Model.working_with_files import edit_note, delete_note
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def print_hi():
+    print(f'Hi, Я рад Вас приветствовать, приступаем:')
+    print()
+
+
 def menu():
     while True:
         print('1. Добавить заметку')
@@ -11,22 +14,24 @@ def menu():
         print('4. Удаление заметки')
         print('0. Выход')
 
-        choice = input("Выберите действие")
+        choice = input("Выберите действие  :   ")
+        print()
 
         if choice == '1':
-            view_add_notes()
+            View.create_notes()
         elif choice == '2':
-            pass
+            View.list_all_notes()
         elif choice == '3':
-            pass
+            edit_note()
         elif choice == '4':
-            pass
+            delete_note()
         elif choice == '0':
             print("До встречи")
             break
+        else:
+            print("Неверный выбор.")
 
 
 if __name__ == '__main__':
-    print_hi("Hi,Hu")
+    print_hi()
     menu()
-
